@@ -1,106 +1,119 @@
-@charset "utf-8";
-
-/* General Styles */
-
-html {
-    background-image: url(index_background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100%;
-}
-
-
-/* Header Styles */
-
-header {
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 10px;
-}
-
-
-/* Body Styles */
-
+/* General Page Styling */
 
 body {
-    background-color: #d9dfe1;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1152px;
-    min-height: 120vh;
-    padding-bottom: 100px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
 }
 
-@font-face {
-   font-family: 'Playwrite';
-   src: url('PlaywriteGBS-Regular.ttf') format('truetype');
-}
+/* Header */
 
-h1 {
-   font-family: 'Playwrite', cursive;
-   background-color: #dad1de;
-   color: black;
-
-   text-align: center;
-   font-size: 4.75em;
-
-   margin: 0;
-   padding: 30px;
-
-   width: 100%;
-   box-sizing: border-box;
-}
-
-h2 {
-    font-family: 'Playwrite', cursive;    
+header {
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-    text-size: 2em;
-    padding-top: 7px;
+    padding: 30px;
 }
 
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    padding-left: 150px;
-    padding-top: 7px;
+header h1 {
+    margin-bottom: 10px;
 }
 
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: lighter;
+/* Main */
 
-    padding-left: 160px;
-}
-
-.infoBox {
-    width: 600px;
-    min-height: 250px;
-
+main {
+    width: 90%;
+    max-width: 1000px;
     margin: 30px auto;
-    padding: 40px;
-
-    background-image: url("index_infobox.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    background-position: left 0.25in top -0.5in;
-
-    border-radius: 20px;
-    text-align: center;
 }
 
-.infoBox h3,
-.infoBox p {
-    padding-left: 0;
+/* About Section */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
+img {
+    width: 200px;
+    border-radius: 10px;
+}
 
-/* Navigation and Link Styles */
+/* Cards */
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    color: #2c3e50;
+}
+
+/* Skills List */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Navigation */
 
 nav {
-   font-family: 'Playwrite', cursive;
-   font-size: small;
-   color:black;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
 }
 
+nav a,
+.card a {
+    color: #2c3e50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* JavaScript Examples */
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #486581;
+}
+
+#greetingOutput,
+#calculatorOutput {
+    font-weight: bold;
+}
