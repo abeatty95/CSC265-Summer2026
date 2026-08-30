@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +35,7 @@
             </div>
 
             <div class="col-md-8">
+                <!-- About Me content added with jQuery -->
             </div>
         </section>
 
@@ -102,7 +102,7 @@
                         <a href="myReact.html"
                             class="btn btn-primary">
                             View React Example
-                         </a>
+                        </a>
                     </div>
                 </section>
             </div>
@@ -112,14 +112,57 @@
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
+        <!-- Footer text added with jQuery -->
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous">
     </script>
 
+    <script>
+        $(function () {
+
+            // jQuery Modification 1:
+            // Add About Me content to the empty .col-md-8 div
+            $(".about .col-md-8").html(
+                "<h2>About Me</h2>" +
+                "<p>I am a web development student learning HTML, CSS, JavaScript, jQuery, and React. This portfolio showcases examples of my coursework and projects.</p>"
+            );
+
+
+            // jQuery Modification 2:
+            // Add text to the footer
+            $("footer").html(
+                "<p class='mb-0'>&copy; 2026 Amanda Beatty | Web Development Portfolio</p>"
+            );
+
+
+            // jQuery Modification 3:
+            // Add a hover effect to all portfolio cards
+            $(".card").hover(
+                function () {
+                    $(this).addClass("shadow-lg");
+                },
+                function () {
+                    $(this).removeClass("shadow-lg");
+                }
+            );
+
+
+            // jQuery Modification 4:
+            // Change the header title when the user clicks it
+            $("h1").click(function () {
+                $(this).text("Welcome to My Web Development Portfolio!");
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>
-```
