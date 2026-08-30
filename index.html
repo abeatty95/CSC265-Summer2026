@@ -112,10 +112,10 @@
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
-        <!-- Footer text added with jQuery -->
+        <!-- Footer content added with jQuery -->
     </footer>
 
-    <!-- jQuery -->
+    <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Bootstrap -->
@@ -143,13 +143,13 @@
 
 
             // jQuery Modification 3:
-            // Add a hover effect to all portfolio cards
+            // Change the card shadow when the user hovers over a card
             $(".card").hover(
                 function () {
-                    $(this).addClass("shadow-lg");
+                    $(this).removeClass("shadow-sm").addClass("shadow-lg");
                 },
                 function () {
-                    $(this).removeClass("shadow-lg");
+                    $(this).removeClass("shadow-lg").addClass("shadow-sm");
                 }
             );
 
